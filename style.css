@@ -1,3 +1,61 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    background-color: #BBD5ED;
 }
+nav {
+    background: #2B2D42;
+    overflow: hidden;
+    width: 100%;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul .phrase {
+    float: left;
+    color: #BBD5ED;
+    padding: 10px 10px 0px 10px;
+    margin-top: 10px;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font: Helvetica;
+    display: block;
+    color: #BBD5ED;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+nav a:hover {
+    background: #7B8CDE;
+    outline: 0;
+}
+
+/*
+Colors:
+- #7B8CDE: Curnflower Blue
+- #FFBF69: Mellow Apricot
+- #2B2D42: Space Cadet
+*/
+
+
+
+
+
