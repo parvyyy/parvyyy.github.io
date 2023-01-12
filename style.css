@@ -254,6 +254,10 @@ nav a:hover {
     text-align: center;
 }
 
+.upButton a:link {
+    color: #398274;
+}
+
 .upButton a:visited {
     color: #398274;
 }
@@ -266,6 +270,10 @@ nav a:hover {
     color: #398274;
     font-size: 2rem;
     text-align: center;
+}
+
+.downButton a:link {
+    color: #398274;
 }
 
 .downButton a:visited {
@@ -291,9 +299,6 @@ nav a:hover {
 
 .footer a {
     float: right;
-
-    
-
     text-align: center;
 
     display: block;
