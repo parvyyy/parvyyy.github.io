@@ -1,16 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    background-color: #BBD5ED;
+	background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+
+/* https://codepen.io/P1N2O/pen/pyBNzX */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}   
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 nav {
-    background: #2B2D42;
+    position: fixed;
+    z-index: 100;   
+    
     overflow: hidden;
     width: 100%;
-
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
+    background: #398274;                                                 
 }
 
 nav ul{
@@ -20,34 +53,302 @@ nav ul{
     overflow: hidden;
 }
 
-nav ul .phrase {
-    float: left;
-    color: #BBD5ED;
-    padding: 10px 10px 0px 10px;
-    margin-top: 10px;
-}
-
-nav li {
-    float: right;
-}
-
 nav a {
-    font-family: Arial, Helvetica, sans-serif;
-    font: Helvetica;
-    display: block;
-    color: #BBD5ED;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 20px;
-}
+    float: left;
 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+
+    text-align: center;
+
+    display: block;
+    color: white;
+
+    
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+    
+}
 
 nav a:hover {
     background: #7B8CDE;
     outline: 0;
 }
 
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    /* box-sizing: content-box; */
+    gap: 2em;
+    height: 100vh;
+}
+
+.infoContainer {
+    background-color: #79AEA3;
+
+    padding: 25px;
+    margin-top: 1rem;
+    border-radius: 2.5rem;
+
+    width: 70%;
+    max-width: 1000px;
+    height: fit-content;
+
+}
+
+.heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.circleContainer {
+    margin-top: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    aspect-ratio: 1;
+}
+
+.outerCircle {
+    width: 60%;
+    min-width: 350px;
+
+    /* Ensures that the width and height are equivalent in px, while allowing
+    width to be a % quantity */
+    aspect-ratio: 1;
+    
+    border-radius: 50%;
+    border: 2px dotted gray;
+    position: relative;
+} 
+
+.innerCircle-a {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: 30%;
+    top: -20%;
+
+    background-image: url('images/1.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerCircle-a:hover {
+    width: 42%;
+    top: -19%;
+    left: 29%;
+}
+
+.innerCircle-b {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: 30%;
+    top: 80%;
+
+    background-image: url('images/4.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerCircle-c {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: 70%;
+    top: 7.5%;
+
+    background-image: url('images/2a.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerCircle-d {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: 70%;
+    top: 52.5%;
+
+    background-image: url('images/3a.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerCircle-e {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: -10%;
+    top: 52.5%;
+
+    background-image: url('images/cat.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.innerCircle-f {
+    width: 40%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    /* border: 2px solid #2B2D42; */
+    position: absolute;
+    left: -10%;
+    top: 7.5%;
+    
+
+    background-image: url('images/cat.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.otherPages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+}
+
+.infoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.upButton {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    color: #398274;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.upButton a:visited {
+    color: #398274;
+}
+
+.downButton {
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    color: #398274;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.downButton a:visited {
+    color: #398274;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: center;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer a {
+    float: right;
+
+    
+
+    text-align: center;
+
+    display: block;
+    color: white;
+
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+
+.icons .twt {
+    background-color: red;
+    background-image: url('images/2a.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* .circleContainer .innerCircle-1 {
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+} */
+
+
+
+
+/* .innerCircle:nth-child(2) {
+    transform: rotate(60deg) translate(0, -50%);
+}
+.innerCircle:nth-child(3) {
+    transform: rotate(120deg) translate(0, -50%);
+}
+.innerCircle:nth-child(4) {
+    transform: rotate(180deg) translate(0, -50%);
+}
+.innerCircle:nth-child(5) {
+    transform: rotate(240deg) translate(0, -50%);
+}
+.innerCircle:nth-child(6) {
+    transform: rotate(300deg) translate(0, -50%);
+} */
 /*
 Colors:
 - #7B8CDE: Curnflower Blue
