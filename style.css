@@ -7,6 +7,8 @@ body {
 	background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+
+    z-index: 0;
 }
 
 /* https://codepen.io/P1N2O/pen/pyBNzX */
@@ -46,7 +48,7 @@ nav {
     background: #398274;                                                 
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0;
@@ -75,6 +77,49 @@ nav a:hover {
     outline: 0;
 }
 
+.dropDown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropDown .dropDownButton {
+    font-size: 0.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+  }
+
+  .dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+  .dropDownContent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropDownContent a:hover {
+    background-color: #ddd;
+  }
+
+  .dropDown:hover .dropDownContent {
+    display: block;
+    z-index: 10;
+  }
+
 
 .mainPage {
     display: flex;
@@ -88,7 +133,8 @@ nav a:hover {
 }
 
 .infoContainer {
-    background-color: #79AEA3;
+    z-index: 1;
+    background-color: #949BA0;
 
     padding: 25px;
     margin-top: 1rem;
@@ -104,7 +150,14 @@ nav a:hover {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
     text-align: center;
-    color: white;
+
+    /* https://www.youtube.com/watch?v=Xc6G3oV24yE @ 7:43 */
+    background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .circleContainer {
