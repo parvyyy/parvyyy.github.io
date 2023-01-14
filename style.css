@@ -4,14 +4,8 @@ html {
 
 body {
     margin: 0;
-	/* background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite; */
-
     background-color: #F7F6C5;
-
     overflow: hidden;
-
 }
 
 strong {
@@ -102,7 +96,7 @@ nav a {
     width: 60px;
 }
 
-  .dropDownContent a {
+.dropDownContent a {
     
     float: left;
     color: black;
@@ -110,15 +104,15 @@ nav a {
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 
-  .dropDownContent a:hover {
+.dropDownContent a:hover {
     background-color: transparent;
-  }
+}
 
-  .dropDown:hover .dropDownContent {
+.dropDown:hover .dropDownContent {
     display: block;
-  }
+}
 
 
 .mainPage {
@@ -428,8 +422,6 @@ nav a {
 .insta {
     background-image: url('images/insta.png'); 
 }
-
-
 
 .moodContainer {
     display: flex;
