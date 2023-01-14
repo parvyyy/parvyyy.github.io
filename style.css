@@ -4,10 +4,18 @@ html {
 
 body {
     margin: 0;
-	background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
+	/* background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite; */
 
+    background-color: #F7F6C5;
+
+    overflow: hidden;
+
+}
+
+strong {
+    color: #1B998B;
 }
 
 /* https://codepen.io/P1N2O/pen/pyBNzX */
@@ -28,6 +36,15 @@ p {
     color: white;
     font-size: 1.25em;
     text-align: center;
+    line-height: 2ch;
+}
+
+.dotPointList {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2ch;
+    color: white;
+    font-size: 1.25em;
+    text-align: left;
 }
 
 a:link {
@@ -36,76 +53,12 @@ a:link {
 
 a:visited {
     text-decoration: none;
+    color: inherit;
 }
-
-/* .navbar {
-    width: 100%;
-    background-color: #398274; 
-    z-index: 100;
-	position: fixed;
-    top:0
-  }
-  
-  .navbar a {
-    float: left;
-    background-color: #398274; 
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    background-color: #398274; 
-    float: right;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } */
 
 nav {
     width: 100%;
-    background-color: #398274; 
+    background-color: #402E2A; 
     z-index: 100;
 	position: fixed;
     top: 0;                                    
@@ -121,13 +74,8 @@ nav a {
     color: white;
 
     margin: 0;
-    padding: 14px 16px 14px 16px;
+    padding: 0;
     text-decoration: none;
-}
-
-nav a:hover {
-    background: #7B8CDE;
-    outline: 0;
 }
 
 .dropDown {
@@ -148,6 +96,7 @@ nav a:hover {
 .dropDownContent {
     display: none;
     position: absolute;
+    top: 100%;
     z-index: 1;
     background-color: transparent;
     width: 60px;
@@ -185,8 +134,16 @@ nav a:hover {
     z-index: 2;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
 .infoContainer {
-    background-color: #949BA0;
+    background-color: #402E2A;
 
     padding: 25px;
     margin-top: 1rem;
@@ -204,9 +161,9 @@ nav a:hover {
     text-align: center;
 
     /* https://www.youtube.com/watch?v=Xc6G3oV24yE @ 7:43 */
-    background: linear-gradient(-45deg, #2ED1B1, #8FC9BD, white);
+    background: linear-gradient(-45deg, #1B998B, #2ED1B1, #8FC9BD);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 2s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -250,12 +207,6 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.innerCircle-a:hover {
-    width: 42%;
-    top: -19%;
-    left: 29%;
-}
-
 .innerCircle-b {
     width: 40%;
     aspect-ratio: 1;
@@ -295,7 +246,7 @@ nav a:hover {
     left: 70%;
     top: 52.5%;
 
-    background-image: url('images/cat.jpg');
+    background-image: url('images/5.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -326,7 +277,7 @@ nav a:hover {
     top: 7.5%;
     
 
-    background-image: url('images/cat.jpg');
+    background-image: url('images/6.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -357,6 +308,7 @@ nav a:hover {
     color: #398274;
     font-size: 2rem;
     text-align: center;
+    margin: auto;
 }
 
 .upButton a:link {
@@ -375,6 +327,7 @@ nav a:hover {
     color: #398274;
     font-size: 2rem;
     text-align: center;
+    margin: auto;
 }
 
 .downButton a:link {
@@ -383,6 +336,36 @@ nav a:hover {
 
 .downButton a:visited {
     color: #398274;
+}
+
+.embeddedVid {
+    display: block;
+    margin: auto;
+}
+
+.embeddedImg {
+    display: block;
+    margin: auto;
+    aspect-ratio: 4/3;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    gap: 30px;
+}
+
+.caption {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.0em;
+    color: white;
 }
 
 .footer {
@@ -414,57 +397,217 @@ nav a:hover {
 }
 
 .icons {
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
+    height: 32px;
+    width: 32px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.icons .twt {
-    background-color: red;
-    background-image: url('images/2a.jpeg');
+.twt {
+    background-image: url('images/twitter.png'); 
+}
+
+.git {
+    background-image: url('images/github.png'); 
+}
+
+.yt {
+    background-image: url('images/youtube.png'); 
+}
+
+.lkdn {
+    background-image: url('images/linkedin.png'); 
+}
+
+.sptfy {
+    background-image: url('images/spotify.png'); 
+}
+
+.insta {
+    background-image: url('images/insta.png'); 
+}
+
+
+
+.moodContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+
+    margin-top: 1em;
+}
+
+.mood {
+    width: 33.33%;
+    padding: 100px 0px;
+    text-align: center;
+    border-radius: 15%;
+    border: 5px solid #F7F6C5;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 200%;
+    
+    /* https://www.youtube.com/watch?v=Xc6G3oV24yE @ 7:43 */
+    background: linear-gradient(-45deg, #DB9065, #F1C493, #F7F6C5);
+	background-size: 100% 100%;
+	animation: gradient 2s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.silly:hover {  
+    background: none;
+    background-image: url('images/silly.jpg');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.happy:hover {
+    background: none;
+    background-image: url('images/happy.jpg');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swag:hover {
+    background: none;
+    background-image: url('images/swag.jpg');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gamesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+
+    margin-top: 1em;
+}
+
+.game {
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    border: 5px solid #F7F6C5;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 200%;
+    
+    /* https://www.youtube.com/watch?v=Xc6G3oV24yE @ 7:43 */
+    background: linear-gradient(-45deg, #DB9065, #F1C493, #F7F6C5);
+	background-size: 100% 100%;
+	animation: gradient 2s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mc:hover {
+    background: none;
+    background-image: url('images/minecraft.png');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-text-fill-color: bisque;
+}
+
+.lol:hover {
+    background: none;
+    background-image: url('images/league.png');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-text-fill-color: bisque;
+}
+
+.pkmn:hover {
+    background: none;
+    background-image: url('images/pokemon.jpg');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-text-fill-color: bisque;
+}
+
+.coc:hover {
+    background: none;
+    background-image: url('images/coc.png');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-text-fill-color: bisque;
+}
+
+.tft:hover {
+    background: none;
+    background-image: url('images/tft.jpg');
+    animation: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    -webkit-text-fill-color: bisque;
+}
+
+.firstContainer, .secondContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+
+    margin-top: 1em;
+}
+
+.hobby {
+    width: 33.33%;
+    padding: 120px 0px;
+    text-align: center;
+    border-radius: 15%;
+    border: 5px solid #F7F6C5;
+}
+
+.anime1 {
+    background-image: url('images/mob.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.manga1 {
+    background-image: url('images/onepiece.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kdrama1 {
+    background-image: url('images/alc.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-
-/* .circleContainer .innerCircle-1 {
-    width: 20%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: blue;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-} */
-
-
-
-
-/* .innerCircle:nth-child(2) {
-    transform: rotate(60deg) translate(0, -50%);
-}
-.innerCircle:nth-child(3) {
-    transform: rotate(120deg) translate(0, -50%);
-}
-.innerCircle:nth-child(4) {
-    transform: rotate(180deg) translate(0, -50%);
-}
-.innerCircle:nth-child(5) {
-    transform: rotate(240deg) translate(0, -50%);
-}
-.innerCircle:nth-child(6) {
-    transform: rotate(300deg) translate(0, -50%);
-} */
-/*
-Colors:
-- #7B8CDE: Curnflower Blue
-- #FFBF69: Mellow Apricot
-- #2B2D42: Space Cadet
-*/
 
 
 
