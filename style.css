@@ -43,6 +43,7 @@ p {
 
 a:link {
     text-decoration: none;
+    color: none;
 }
 
 a:visited {
@@ -53,8 +54,8 @@ a:visited {
 nav {
     width: 100%;
     background-color: #F7F6C5; 
-    z-index: 0;
 	position: fixed;
+    z-index: 0;
     top: 0;                                    
 }
 
@@ -75,6 +76,7 @@ nav a {
 .dropDown {
     float: right;
     overflow: hidden;
+    z-index: 2;
 }
 
 .dropDown .dropDownButton {
@@ -83,7 +85,6 @@ nav a {
     outline: none;
     color: white;
     padding: 2px 15px 0px 0px;
-
     margin: 0;
 }
 
@@ -97,7 +98,6 @@ nav a {
 }
 
 .dropDownContent a {
-    
     float: left;
     color: black;
     padding: 0px 0px;
@@ -114,14 +114,11 @@ nav a {
     display: block;
 }
 
-
 .mainPage {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     justify-content: flex-start;
-    /* box-sizing: content-box; */
     gap: 2em;
     height: 100vh;
 
@@ -190,7 +187,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: 30%;
     top: -20%;
@@ -205,7 +201,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: 30%;
     top: 80%;
@@ -220,7 +215,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: 70%;
     top: 7.5%;
@@ -235,7 +229,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: 70%;
     top: 52.5%;
@@ -250,7 +243,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: -10%;
     top: 52.5%;
@@ -265,7 +257,6 @@ nav a {
     width: 40%;
     aspect-ratio: 1;
     border-radius: 50%;
-    /* border: 2px solid #2B2D42; */
     position: absolute;
     left: -10%;
     top: 7.5%;
@@ -302,8 +293,7 @@ nav a {
     color: #398274;
     font-size: 2rem;
     text-align: center;
-    margin: auto;
-
+    margin: 0;
     z-index: 5;
 }
 
@@ -323,8 +313,7 @@ nav a {
     color: #398274;
     font-size: 2rem;
     text-align: center;
-    margin: auto;
-
+    margin: 0;
     z-index: 5;
 }
 
@@ -433,7 +422,6 @@ nav a {
     justify-content: space-around;
     align-items: center;
     gap: 2em;
-
     margin-top: 1em;
 }
 
@@ -488,7 +476,6 @@ nav a {
     justify-content: space-around;
     align-items: center;
     gap: 1em;
-
     margin-top: 1em;
 }
 
@@ -576,7 +563,7 @@ nav a {
 
 .hobby {
     width: 33.33%;
-    padding: 120px 0px;
+    padding: 150px 0px;
     text-align: center;
     border-radius: 15%;
     border: 5px solid #F7F6C5;
@@ -602,10 +589,3 @@ nav a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
